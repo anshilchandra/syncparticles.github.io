@@ -6,24 +6,23 @@
   <title>SYNC PARTICLES</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       background-color: #152238;
       color: #EFECE6;
-      margin: 0;
       font-family: Arial, sans-serif;
       height: 100vh;
       position: relative;
-      box-sizing: border-box;
-    }
-
-    .brand-container {
-      position: absolute;
-      top: 30vh; /* 70% from bottom */
-      left: 50%;
-      transform: translate(-50%, -30%);
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
+      padding: 0 1rem;
       text-align: center;
     }
 
@@ -32,51 +31,48 @@
       font-weight: 700;
       color: #758225;
       font-size: 3.2rem;
-      margin: 0;
-      letter-spacing: 0.5px;
+      line-height: 1.2;
+      margin-bottom: 0.3rem;
     }
 
     .subline {
       font-family: 'Varela Round', sans-serif;
       font-size: 1.25rem;
       color: #758225;
-      margin-top: 0.4rem;
+      margin-bottom: 2rem;
     }
 
     .bottom-taglines {
       position: absolute;
       bottom: 5vh;
       width: 100%;
-      text-align: center;
       font-size: 1.1rem;
       color: #BFBFBF;
     }
 
     .bottom-taglines div {
-      margin: 0.25rem 0;
+      margin: 0.4rem 0;
     }
 
     @media (max-width: 600px) {
       .brand-name {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
 
       .subline {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
 
       .bottom-taglines {
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="brand-container">
-    <div class="brand-name">SYNC PARTICLES</div>
-    <div class="subline">Business Management SaaS</div>
-  </div>
+  <div class="brand-name">SYNC PARTICLES</div>
+  <div class="subline">Business Management SaaS</div>
 
   <div class="bottom-taglines">
     <div>Your Trade Secret</div>
@@ -85,6 +81,7 @@
 
 </body>
 </html>
+
 
 
 
