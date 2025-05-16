@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SYNC PARTICLES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Peralta&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #152238;
@@ -17,7 +18,7 @@
 
     .brand-container {
       position: absolute;
-      top: 30vh; /* 30% from top = 70% from bottom */
+      top: 30vh; /* 70% from bottom */
       left: 50%;
       transform: translate(-50%, -30%);
       display: flex;
@@ -26,38 +27,45 @@
       text-align: center;
     }
 
-    h1 {
+    .brand-name {
+      font-family: 'Peralta', serif;
       color: #758225;
       font-size: 3rem;
       margin: 0;
       letter-spacing: 1.5px;
     }
 
-    .tagline-primary {
-      color: #BFBFBF;
+    .subline {
+      font-family: 'Varela Round', sans-serif;
       font-size: 1.25rem;
-      margin-top: 0.5rem;
-      text-align: center;
+      color: #758225;
+      margin-top: 0.4rem;
     }
 
-    .bottom-tagline {
-      color: #BFBFBF;
-      font-weight: bold;
-      font-size: 1.1rem;
+    .bottom-taglines {
       position: absolute;
       bottom: 5vh;
-      left: 50%;
-      transform: translateX(-50%);
+      width: 100%;
       text-align: center;
+      font-size: 1.1rem;
+      color: #BFBFBF;
+    }
+
+    .bottom-taglines div {
+      margin: 0.25rem 0;
     }
 
     @media (max-width: 600px) {
-      h1 {
+      .brand-name {
         font-size: 2.2rem;
       }
 
-      .tagline-primary {
+      .subline {
         font-size: 1.1rem;
+      }
+
+      .bottom-taglines {
+        font-size: 1rem;
       }
     }
   </style>
@@ -65,17 +73,17 @@
 <body>
 
   <div class="brand-container">
-    <h1>SYNC PARTICLES</h1>
-    <div class="tagline-primary">Your Trade Secret</div>
+    <div class="brand-name">SYNC PARTICLES</div>
+    <div class="subline">Business Management SaaS</div>
   </div>
 
-  <div class="bottom-tagline">Launching Soon. Stay synced.</div>
+  <div class="bottom-taglines">
+    <div>Your Trade Secret</div>
+    <div>Launching Soon. Stay synced.</div>
+  </div>
 
 </body>
 </html>
 
-
-</body>
-</html>
 
 
