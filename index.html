@@ -11,19 +11,19 @@
       margin: 0;
       font-family: Arial, sans-serif;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-sizing: border-box;
       position: relative;
+      box-sizing: border-box;
     }
 
-    .center-content {
+    .brand-container {
+      position: absolute;
+      top: 70vh; /* 70% from top */
+      left: 50%;
+      transform: translate(-50%, -70%);
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      text-align: right;
+      align-items: center;
+      text-align: center;
     }
 
     h1 {
@@ -34,9 +34,10 @@
     }
 
     .tagline-primary {
-      color: #D4CBB8;
+      color: #BFBFBF;
       font-size: 1.25rem;
       margin-top: 0.5rem;
+      text-align: center;
     }
 
     .bottom-tagline {
@@ -53,24 +54,17 @@
     @media (max-width: 600px) {
       h1 {
         font-size: 2.2rem;
-        text-align: center;
       }
 
       .tagline-primary {
-        text-align: center;
-        align-self: center;
-      }
-
-      .center-content {
-        align-items: center;
-        text-align: center;
+        font-size: 1.1rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="center-content">
+  <div class="brand-container">
     <h1>SYNC PARTICLES</h1>
     <div class="tagline-primary">Your Trade Secret</div>
   </div>
