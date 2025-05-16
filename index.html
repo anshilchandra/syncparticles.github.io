@@ -7,34 +7,73 @@
   <style>
     body {
       background-color: #152238;
-      color: #BFBFBF;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      color: #EFECE6;
       margin: 0;
       font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       text-align: center;
-      padding: 0 1rem;
+      padding: 2rem;
+      box-sizing: border-box;
     }
+
+    .top-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 5vh;
+    }
+
     h1 {
       color: #758225;
       font-size: 3rem;
-      margin-bottom: 1rem;
-      letter-spacing: 2px;
+      margin: 0;
+      letter-spacing: 1.5px;
+      text-align: left;
     }
-    p {
+
+    .tagline-primary {
+      color: #D4CBB8;
       font-size: 1.25rem;
-      margin: 0.5rem 0;
-      color: #BFBFBF;
+      text-align: left;
+      margin-top: 0.5rem;
+      margin-left: 0.25rem;
+    }
+
+    .bottom-tagline {
+      color: #FFB84D;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 2vh;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .tagline-primary {
+        text-align: center;
+      }
+      .top-section {
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>SYNC PARTICLES</h1>
-  <p>Your Trade Secret</p>
-  <p>Launching Soon. Stay synced.</p>
+
+  <div class="top-section">
+    <h1>SYNC PARTICLES</h1>
+    <div class="tagline-primary">Your Trade Secret</div>
+  </div>
+
+  <div class="bottom-tagline">Launching Soon. Stay synced.</div>
+
 </body>
 </html>
+
 
