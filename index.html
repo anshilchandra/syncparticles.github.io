@@ -18,15 +18,12 @@
       font-family: Arial, sans-serif;
       height: 100vh;
       position: relative;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       padding: 0 1rem;
-    }
-
-    .brand-block {
-      position: absolute;
-       top: 30vh; /* 30% from top = 70% from bottom */
-      left: 50%;
-      transform: translate(-50%, -30%);
+      text-align: center;
     }
 
     .brand-name {
@@ -74,10 +71,8 @@
 </head>
 <body>
 
-  <div class="brand-block">
-    <div class="brand-name">SYNC PARTICLES</div>
-    <div class="subline">Business Management SaaS</div>
-  </div>
+  <div class="brand-name">SYNC PARTICLES</div>
+  <div class="subline">Business Management SaaS</div>
 
   <div class="bottom-taglines">
     <div>Your Trade Secret</div>
@@ -86,5 +81,6 @@
 
 </body>
 </html>
+
 
 
