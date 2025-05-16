@@ -12,81 +12,58 @@
       padding: 0;
     }
 
-    body {
+    html, body {
+      height: 100%;
+      width: 100%;
       background-color: #152238;
-      color: #EFECE6;
       font-family: Arial, sans-serif;
-      height: 100vh;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 1rem;
+      color: #EFECE6;
       text-align: center;
     }
 
-    .brand-container {
+    .brand-block {
       position: absolute;
-      top: 30vh; /* 70% from bottom */
+      top: 40vh; /* 2/5 height from top */
       left: 50%;
-      transform: translate(-50%, -30%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+      transform: translate(-50%, -50%);
+      padding: 0 clamp(1rem, 3vw, 2rem);
     }
-    
+
     .brand-name {
       font-family: 'Playfair Display', serif;
       font-weight: 700;
+      font-size: clamp(2.2rem, 6vw, 4rem); /* Responsive typography */
       color: #758225;
-      font-size: 3.2rem;
-      line-height: 1.2;
-      margin-bottom: 0.3rem;
+      margin-bottom: clamp(0.2rem, 1vw, 0.5rem);
     }
 
     .subline {
       font-family: 'Varela Round', sans-serif;
-      font-size: 1.25rem;
+      font-size: clamp(1rem, 3vw, 1.5rem);
       color: #758225;
-      margin-bottom: 2rem;
+      margin-bottom: clamp(1rem, 4vw, 2rem);
     }
 
     .bottom-taglines {
       position: absolute;
-      bottom: 5vh;
+      bottom: clamp(3vh, 5vw, 6vh);
       width: 100%;
-      font-size: 1.1rem;
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
       color: #BFBFBF;
+      padding: 0 clamp(1rem, 4vw, 2rem);
     }
 
     .bottom-taglines div {
-      margin: 0.4rem 0;
-    }
-
-    @media (max-width: 600px) {
-      .brand-name {
-        font-size: 2rem;
-      }
-
-      .subline {
-        font-size: 1rem;
-      }
-
-      .bottom-taglines {
-        font-size: 0.95rem;
-      }
+      margin: clamp(0.3rem, 1vw, 0.6rem) 0;
     }
   </style>
 </head>
 <body>
 
- <div class="brand-container">
+  <div class="brand-block">
     <div class="brand-name">SYNC PARTICLES</div>
     <div class="subline">Business Management SaaS</div>
- </div>
-  
+  </div>
 
   <div class="bottom-taglines">
     <div>Your Trade Secret</div>
@@ -95,4 +72,3 @@
 
 </body>
 </html>
-
